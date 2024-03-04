@@ -1,0 +1,170 @@
+/* **************
+Imports
+************** */
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+}
+/* **************
+Reset
+************** */
+* , *::after , *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul , ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+/* **************
+Global
+************** */
+:root {
+ --Green: hsl(75, 94%, 57%);
+ --White: hsl(0, 0%, 100%);
+ --Grey: hsl(0, 0%, 20%);
+ --Dark-Grey: hsl(0, 0%, 12%);
+ --Off-Black: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--Off-Black);
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: 'inter' , sans-serif;
+}
+/* **************
+Page Contents
+************** */
+.container {
+    background-color: var(--Dark-Grey);
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 0.625em;
+    -webkit-border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
+    -ms-border-radius: 0.625em;
+    -o-border-radius: 0.625em;
+
+}
+
+.container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: block;
+    margin-inline: auto; 
+    margin-bottom: 1.5em;
+}
+
+.container h1 {
+    color: whitesmoke;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.container h1 span {
+    color: var(--Green);
+    display: block;
+    font-size: 1em;
+    margin: 0.5em 0 1em;
+    
+}
+
+.container p {
+    color: beige;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: "inter";
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
+button {
+    width: 100%;
+    color: var(--White);
+    display: grid;
+    font-size: 1em;
+    font-weight: bold;
+    grid-template-columns: auto;
+    gap: 0.5em;
+    justify-content: center;
+    padding: 1em;
+    background-color: var(--Grey);
+    border: none;
+    border-radius: 1em;
+    outline: none;
+    margin-bottom: 0.8em;
+    cursor: pointer;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.button a:hover {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+    transition: all 0.20s ease-in-out;
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+}
+
+.button a{
+    width: 100%;
+    color: var(--White);
+    display: grid;
+    font-size: 1em;
+    font-weight: bold;
+    grid-template-columns: auto;
+    gap: 0.5em;
+    justify-content: center;
+    padding: 1em;
+    background-color: var(--Grey);
+    border: none;
+    border-radius: 1em;
+    outline: none;
+    margin-bottom: 0.8em;
+    cursor: pointer;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+/* **************
+Media
+************** */
